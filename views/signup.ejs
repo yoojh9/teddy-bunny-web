@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <%- include('head') -%>
+  <body>
+
+    <div class="signup">
+        <div class="container-signup">
+            <div class="wrap-signup">
+                <div class="signup-header" style="background-image: url(images/bg-01.jpg);">
+                    <span class="signup-header-title">
+                        Sign Up
+                    </span>
+                </div>
+                <form class="signup-form">
+                    <div class ="wrap-input" data-validate="아이디를 입력해주세요">
+                        <span class="label-input">아이디</span>
+                        <input class="signup-input" type="text" name="username" placeholder="아이디를 입력하세요">
+                        <span class="signup-input-focus"></span>
+                    </div>
+                    <div class ="wrap-input" data-validate="닉네임을 입력해주세요">
+                        <span class="label-input">닉네임</span>
+                        <input class="signup-input" type="text" name="username" placeholder="닉네임을 입력하세요">
+                        <span class="signup-input-focus"></span>
+                    </div>
+                    <div class ="wrap-input" data-validate="휴대폰번호를 입력해주세요">
+                        <span class="label-input">휴대폰 번호</span>
+                        <input class="signup-input" type="text" name="phone" placeholder="휴대폰 번호를 입력하세요">
+                        <span class="signup-input-focus"></span>
+                    </div>
+
+                    <div class="signup-form-footer">
+                        <button class="signup-form-btn">
+                            회원가입
+                        </button>
+                    </div>
+                </form>     
+            </div>
+        </div>
+    </div>
+
+   <%- include('footer') -%>
+  </body>
+</html>
