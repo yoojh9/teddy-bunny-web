@@ -6,28 +6,33 @@ require('dotenv').config()
 
 
 const kakaoKey = {
-    clientID: "adc6abd46af38b7d5b090bc8e3c5b4a9",
-    clientSecret: "sHA0d9l1xwPMUKjgXwtv60mBM6wCNlh4",
-    callbackURL: "http://localhost:3000/kakao/oauth"
+    clientID: process.env.KAKAO_API_KEY,
+    clientSecret: process.env.KAKAO_CLIENT_SECRET,
+    callbackURL: process.env.KAKAO_CALLBACK_URL
 }
 
 passport.use(
     "kakao-login",
     new KakaoStrategy(kakaoKey, (accessToken, refreshToken, profile, done) => {
         console.log(profile)
+        return done(null, profile.id)
       })
 )
 
 router.get('/login',passport.authenticate("kakao-login"));
 
-router.get(
-    "/oauth",
-    passport.authenticate("kakao-login", {
-        successRedirect: "/",
-        failureRedirect: "/error"
+router.get('/oauth', passport.authenticate("kakao-login", {
+        successRedirect: "/signup",
+        failureRedirect: "/signup"
     })
 );
 
+passport.serializeUser((user, done) => {
+    done(null, user);
+});
 
-
+passport.deserializeUser((user, done) => {
+    down(null, user)
+});
+  
 module.exports = router;
