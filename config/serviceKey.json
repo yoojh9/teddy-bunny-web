@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "floor-noise-server",
+  "private_key_id": "199795485712147f41c13af848c91eb8b1375b49",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDe6IaDaZtnipYj\nXS97/I48dYtZRZ6psqlMJBeqOuRaGWGNs9H/kh5qDMjV31g5tRogbYitSjNejhbK\nCq0qgnO3qeWrvBcAq9tYWNZZgbJ3DgayzPhx7D7CvKrYWTaA7uEZVrshZ9HrFHPX\ni6popR99NMX0EhT3hRbHvAa4WVrUoIWZ5jVmWRXLV4xtWTT8JSXILZBDPilKbfPL\nCtykSrQePPkXABLmTcYhuH9+Z5K1HinO72kLHQD1zzCK6IF+k8yAQK4MuoOzmiMZ\nm+jf+8qi0rz0iTsc7xqemKLn9uZIn3THdJEULmSFGz6Zl7FqTBfsNjBpdw/G8jnz\n5k7wojKxAgMBAAECggEAAYwhWLHbXwnpospuwZBqwlrLpcoONi+yQw43h53S7lHa\nc8oX1GDaIGuPTK8ASJ621RroN5ihNlOoS2XCWojNaBB8spyNXsVSo/syVp5kl3v7\n1LKyyGAd9k44pZ1GtMAXUvA0zgPWw5nyd7JOc5ZLMNVCyPjK8JREjEVn0d7Ks8rR\nC/UtZPh+E1DruLL9UhQgpOhfIAA8uKs8rcSbQhW9Jr8sUjEoJPaPkUH2a+r6Uof6\nIxCE6i7o+Ab5ZkQhR4af1gYnZLS+GRmapj1jVYnJrjgfa+sY2iUrKEv4JKJCb/b1\nROuqcLZsi6wFaBZnJa3DJf5BUGsiDOU+LfLzJ/O9wwKBgQD1AXOuQiTS4rgHkAZZ\nfiXiEl7SejH60A1XAFWc6jdgUPa68OnMluzwQVNf4cXKPWrJ9OQ0xADqBqkra+pF\nKni8IlnlJnyiJbOSO2oGDIQ77M6prRuI2KNzUzBLzglkabBh6/QWFh1JSjHx+EqY\ngp6gmRT/skOhYY+2Hd2ufmX8IwKBgQDo6TnXHmQAvfwQIRrTY2w92C+yKlEk7wGJ\n0DSv6Qgou03VF6gbihjKuX0oDqL1+qyG/7g/ewIummZFsm/Qa4seweGcTjwNmLJ4\nEllj4i9gcKnmjVGQrkKa3zvzmb+DTsidkfrygskXTLlc0y00HnejKnNEKAWelczT\nAdIcM/UpGwKBgAsowsUYHCdCzlEB3VgsJ7uRTKJXkHk1CraAvGWGQXlwlpxTJsL7\nyNT0lMCUPvcELx39unswxj3iicgBhU0bLx6aje+i/iBAiVpKvHyEC23TTmJqEQv9\nmgxBqLx7KPBa4/7ByX9MCI9zAq1busIRiPoVnuA6lVv/XpVT7OnqtehzAoGBAIw3\n9NF0g2IK/pg7ReojfgPRhg1t+oIQvc1ZIo8Q7Q+Qi/ARGOzTe894UkfuX99Utc9k\nXmkhRhQGcjHdlgFU7WFr+cZfNzo8Rp2Q9m3yuvEFgtPBGmzO7FxOrsoeMrT7lj1+\nqCSd5jB3yVR/8kPhX8dEhDZxHcj2iGQ0QWknQp4nAoGBAMd4sjojUkwJEvlnyHhL\nlWy+tiYeWa3ASg8Nc7t9Rmg+JPGtmN7yp4SU36LIunZ5/ZytuKWhUSGma9W2wKlS\nahqlg1LGX47+zXkHHt3igjOdgVL60qgR64yYmmErPU9JYvK2fits1zCTYIz1G/Yn\nzVtH72pzdQpQgP2p7y/8KPLN\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-uon8n@floor-noise-server.iam.gserviceaccount.com",
+  "client_id": "114178957304901001865",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-uon8n%40floor-noise-server.iam.gserviceaccount.com"
+}

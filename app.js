@@ -1,11 +1,11 @@
 const express = require("express");
-const session = require('express-session');
+const session = require("express-session");
 const httpError = require("http-errors");
 const path = require("path");
 const bodyParser = require("body-parser");
 const logger = require("morgan");
-const router = require('./routes/index');
-const passport = require('passport')
+const router = require("./routes/index");
+const passport = require("passport");
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -20,11 +20,13 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
 app.use(passport.initialize());
 
-app.use(session({
-  secret: 'teddybunny',
-  resave: false,
-  saveUninitialized: true
-}));
+app.use(
+  session({
+    secret: "teddybunny",
+    resave: false,
+    saveUninitialized: true
+  })
+);
 
 app.use(passport.session());
 app.use(router);
