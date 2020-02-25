@@ -12,3 +12,4 @@ router.use("/kakao", kakaoRoute);
 router.use("/signup", signupRoute);
 
 module.exports = router;
+ 
