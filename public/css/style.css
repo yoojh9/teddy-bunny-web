@@ -1,3 +1,23 @@
+@charset "utf-8";
+
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button{margin:0;padding:0}
+fieldset,img{border:0 none}
+dl,ul,ol,menu,li{list-style:none}
+blockquote, q{quotes:none}
+blockquote:before, blockquote:after,q:before, q:after{content:'';content:none}
+input,select,textarea,button{vertical-align:middle}
+input::-ms-clear{display:none}
+button{border:0 none;background-color:transparent;cursor:pointer}
+body{background:#1e1e1e;word-wrap:break-word;word-break:keep-all}
+body,th,td,input,select,textarea,button{font-size:16px;line-height:1.5;font-family:'NotoSans Light','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;color:#666}
+a{color:#333;text-decoration:none}
+a:active, a:hover{text-decoration:underline}
+a:active{background-color:transparent}
+address,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+body:lang(ja) {font-family:-apple-system,BlinkMacSystemFont,"Noto Sans Japanese","ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","Helvetica Neue",Arial,Meiryo,sans-serif;word-break:normal} /* 일문 폰트 */ /* 2019-12-03 수정 */ /* 2018-05-03 추가 */
+
+
 /* Base */
 body {
   line-height: 1.7;
@@ -59,6 +79,7 @@ a {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
+  padding-bottom: 10px;
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   background: #fff; }
@@ -1830,3 +1851,46 @@ a {
   background-color: #333333;
 }
 
+/* Terms */
+.termsArticle {
+  overflow:hidden;position:relative;max-width:1160px;margin:0 auto;padding-bottom:180px;
+}
+
+.term-wrap {margin:0 auto;margin-top:40px;border-top:2px solid #4d4d4d}
+.term-tab {position:relative;padding-top:50px}
+.term-wrap + .term-tab{margin-top:30px}
+.term-tab .list-tab{overflow:hidden}
+.team-tab .list-tab ul{list-style:none}
+.term-tab .list-tab li{float:left;display:block;font-size:20px;line-height:30px;color:#666;text-decoration:none}
+
+
+.policy-wrap .policy-title {margin-top:30px;border-top:1px solid #e1e1e1}
+.policy-wrap .policy-title:first-child {margin-top:0;border-top:0 none}
+.policy-title {display:block;padding-top:30px;font-weight:bold;font-size:20px;line-height:26px;color:#1e1e1e}
+.policy-title + .term-wrap{margin-top:30px}
+.policy-wrap .policy-desc{padding-top:28px; line-height: 26px}
+
+/* 개인정보처리방침 */
+.wrap-menu{overflow:hidden;margin-top:27px;padding:19px 0 21px;border:1px solid #1e1e1e}
+.wrap-menu .list-menu{float:left;width:33.33%;padding:0 40px;box-sizing:border-box}
+.wrap-menu .list-menu .link-menu{line-height:34px;color:#1e1e1e;font-family:'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif}
+
+.term-wrap .subject-title +.desc{padding-top:18px}
+.term-wrap .emph-group{display:block;font-size:14px;padding:14px 0 0 25px;color:#1e1e1e;font-family:'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif}
+.term-wrap .desc-group{display:block;padding:5px 0 0 25px;font-size:14px;font-weight:normal;color:#1e1e1e}
+
+.term-title{display:block;padding:30px 0 0 21px;font-weight:normal;color:#1e1e1e;font-family:'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif}
+.subject-title{display:block;padding-top:40px;line-height:28px;color:#1e1e1e}
+.subject-title.fst{padding-top:53px}
+
+
+.list-2depth{padding:9px 0 0 37px}
+.list-2depth li{padding-top:0;font-size:14px;line-height:26px}
+.list-2depth-type1{padding:10px 0 0 22px}
+.list-2depth-type1 li{font-size:14px;line-height:26px}
+.list-2depth-type1 li:first-child .emph-g2{padding-top:0}
+.term-wrap .emph-g2{display:block;padding-top:8px;font-family:'NotoSans Regular','Malgun Gothic','맑은 고딕','Apple SD Gothic Neo','돋움',dotum, sans-serif;color:#1e1e1e}
+
+.terms-list{overflow:hidden}
+.terms-list .bundle-terms{float:left;margin-right:105px}
+.terms-list .bundle-terms:last-child{margin-right:0}

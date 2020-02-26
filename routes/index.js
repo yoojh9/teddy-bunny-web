@@ -8,6 +8,14 @@ router.get("/", function(req, res, next) {
   res.render("index");
 });
 
+router.get("/terms", function(req, res, next) {
+  res.render("terms")
+})
+
+router.get("/privacy", function(req, res, next) {
+  res.render("privacy")
+})
+
 router.use("/kakao", kakaoRoute);
 router.use("/signup", signupRoute);
 
