@@ -3,6 +3,8 @@ var router = express.Router();
 const passport = require("passport");
 const KakaoStrategy = require("passport-kakao").Strategy;
 var db = require("../../db/firebase");
+const {isLoggedIn} = require("../middleware")
+
 require("dotenv").config();
 
 const kakaoKey = {
@@ -15,22 +17,20 @@ passport.use(
   "kakao-login",
   new KakaoStrategy(kakaoKey, (accessToken, refreshToken, profile, done) => {
     let obj = profile._json.kakao_account;
+    console.log('obj='+JSON.stringify(obj))
     let user = {
       userid: obj.email,
       nickname: obj.profile.nickname,
+      thumbnail: obj.profile.thumbnail_image_url,
       member: false
     };
 
-    let check = db.checkUser(user.userid);
-
-    check
+    db.checkUser(user.userid)
       .then(check => {
         if (check) {
-          user.member = true;
-          return done(null, user);
-        } else {
-          return done(null, user);
+          user.member = true
         }
+        return done(null, user);
       })
       .catch(err => {
         return done(err);
@@ -39,6 +39,12 @@ passport.use(
 );
 
 router.get("/login", passport.authenticate("kakao-login"));
+
+router.get("/logout", isLoggedIn, (req, res) => {
+  req.logout()
+  req.session.destroy()
+  res.redirect(301, '/')
+});
 
 router.get(
   "/oauth",
@@ -54,7 +60,7 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((user, done) => {
-  down(null, user);
+  done(null, user);
 });
 
 module.exports = router;

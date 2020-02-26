@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const logger = require("morgan");
 const router = require("./routes/index");
 const passport = require("passport");
+const flash = require('connect-flash')
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -16,19 +17,16 @@ app.set("view engine", "ejs");
 
 app.use(logger("tiny"));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+
 app.use(express.static(path.join(__dirname, "public")));
+app.use(session({secret: "teddybunny",resave: false,saveUninitialized: true}));
+
+app.use(bodyParser.urlencoded({ extended: false }));
+
+app.use(flash());
 app.use(passport.initialize());
-
-app.use(
-  session({
-    secret: "teddybunny",
-    resave: false,
-    saveUninitialized: true
-  })
-);
-
 app.use(passport.session());
+
 app.use(router);
 
 // catch 404 and forward to error handler

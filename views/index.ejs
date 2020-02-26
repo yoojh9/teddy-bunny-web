@@ -69,18 +69,19 @@
                       <li><a href="blog.html">Blog</a></li>
                       <li><a href="contact.html">Contact</a></li>
                       <li>
-                        <!-- <a id="kakao-login-btn"></a> -->
-                        <a href="/kakao/login">
-                          <img
-                            src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-                          />
-                        </a>
-                        <a href="http://developers.kakao.com/logout"></a>
-                        <!-- <a href="contact.html" ><span
-                            class="d-inline-block bg-primary text-white btn btn-primary"
-                            >Get Started</span
-                          ></a
-                        > -->
+                          <% if(locals.user){ %>
+                            <a href="/kakao/logout">Logout</a>
+                            <img
+                              src="<%=locals.user.thumbnail%>"
+                              alt="Image"
+                              class="img-fluid rounded-circle w-25"
+                            />
+                            
+                          <% } else { %>
+                            <a href="/kakao/login">SignIn</a>
+                          <% } %>
+                        
+                          <!-- <a href="http://developers.kakao.com/logout"></a> -->
                       </li>
                     </ul>
                   </div>
