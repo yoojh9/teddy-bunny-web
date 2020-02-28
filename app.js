@@ -1,5 +1,6 @@
 const express = require("express");
 const session = require("express-session");
+const favicon = require("serve-favicon");
 const httpError = require("http-errors");
 const path = require("path");
 const bodyParser = require("body-parser");
@@ -18,7 +19,10 @@ app.set("view engine", "ejs");
 app.use(logger("tiny"));
 app.use(bodyParser.json());
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 app.use(express.static(path.join(__dirname, "public")));
+
+
 app.use(session({secret: "teddybunny",resave: false,saveUninitialized: true}));
 
 app.use(bodyParser.urlencoded({ extended: false }));

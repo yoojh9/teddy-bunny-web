@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>logo_sketch</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#4F81BD" fill="#4F81BD" x="0.5" y="0.5" width="49" height="49"></rect>
+        <g id="Triangle-3" transform="translate(10.000000, 13.000000)">
+            <path d="M14.8865891,0 L27.4407232,11.2554306 C27.8519375,11.6241055 27.8864225,12.2563307 27.5177476,12.667545 C27.3280637,12.8791155 27.0573296,13 26.7731781,13 L3,13 C2.44771525,13 2,12.5522847 2,12 C2,11.7158485 2.12088449,11.4451145 2.33245498,11.2554306 L14.8865891,0 L14.8865891,0 Z" id="Triangle" fill="#FFFFFF"></path>
+            <rect id="Rectangle" fill="#FFFFFF" x="4.38658907" y="12" width="21" height="11"></rect>
+            <rect id="Rectangle" fill="#4F81BD" x="11.3865891" y="18" width="7" height="7"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="21.3865891" y="3" width="3" height="7"></rect>
+        </g>
+    </g>
+</svg>
